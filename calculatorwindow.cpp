@@ -7,7 +7,7 @@
 
 CalculatorWindow::CalculatorWindow(QWidget *parent) : QWidget(parent)
 {
-    setWindowTitle(QStringLiteral("吴小东的计算器"));
+    setWindowTitle(QStringLiteral("计算器"));
     resize(540, 590);
     setMinimumSize(440, 480);
     setFocusPolicy(Qt::StrongFocus);
