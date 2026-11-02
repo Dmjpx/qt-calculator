@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "qt-release",
+      "displayName": "Qt 6.11.1 Release (LLVM MinGW)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "environment": {
+        "PATH": "D:/Qt/Tools/llvm-mingw1706_64/bin;D:/Qt/Tools/Ninja;D:/Qt/6.11.1/llvm-mingw_64/bin;$penv{PATH}"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.11.1/llvm-mingw_64",
+        "CMAKE_CXX_COMPILER": "D:/Qt/Tools/llvm-mingw1706_64/bin/clang++.exe",
+        "CMAKE_MAKE_PROGRAM": "D:/Qt/Tools/Ninja/ninja.exe"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "qt-release", "configurePreset": "qt-release" }
+  ]
+}
